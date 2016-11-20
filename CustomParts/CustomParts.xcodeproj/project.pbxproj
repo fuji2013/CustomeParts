@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A73F0D951DE1B1EA0095EF1C /* CustomParts.h in Headers */ = {isa = PBXBuildFile; fileRef = A73F0D931DE1B1EA0095EF1C /* CustomParts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A73F0DBC1DE1B3C80095EF1C /* CrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73F0DBB1DE1B3C80095EF1C /* CrossButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A73F0D901DE1B1EA0095EF1C /* CustomParts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomParts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73F0D931DE1B1EA0095EF1C /* CustomParts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomParts.h; sourceTree = "<group>"; };
 		A73F0D941DE1B1EA0095EF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73F0DBB1DE1B3C80095EF1C /* CrossButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrossButton.swift; path = CrossButton/CrossButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		A73F0D921DE1B1EA0095EF1C /* CustomParts */ = {
 			isa = PBXGroup;
 			children = (
+				A73F0DBA1DE1B39B0095EF1C /* CrossButton */,
 				A73F0D931DE1B1EA0095EF1C /* CustomParts.h */,
 				A73F0D941DE1B1EA0095EF1C /* Info.plist */,
 			);
 			path = CustomParts;
+			sourceTree = "<group>";
+		};
+		A73F0DBA1DE1B39B0095EF1C /* CrossButton */ = {
+			isa = PBXGroup;
+			children = (
+				A73F0DBB1DE1B3C80095EF1C /* CrossButton.swift */,
+			);
+			name = CrossButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					A73F0D8F1DE1B1EA0095EF1C = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73F0DBC1DE1B3C80095EF1C /* CrossButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +252,7 @@
 		A73F0D991DE1B1EA0095EF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -251,6 +265,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swift-studying.CustomParts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -258,6 +273,7 @@
 		A73F0D9A1DE1B1EA0095EF1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

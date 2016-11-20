@@ -12,6 +12,7 @@
 		A73F0DAE1DE1B3420095EF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F0DAC1DE1B3420095EF1C /* Main.storyboard */; };
 		A73F0DB01DE1B3420095EF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73F0DAF1DE1B3420095EF1C /* Assets.xcassets */; };
 		A73F0DB31DE1B3420095EF1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73F0DB11DE1B3420095EF1C /* LaunchScreen.storyboard */; };
+		A73F0DBF1DE1B7F00095EF1C /* CustomParts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73F0DBE1DE1B7F00095EF1C /* CustomParts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A73F0DAF1DE1B3420095EF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73F0DB21DE1B3420095EF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A73F0DB41DE1B3420095EF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73F0DBE1DE1B7F00095EF1C /* CustomParts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CustomParts.framework; path = "../CustomParts/build/Debug-iphoneos/CustomParts.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73F0DBF1DE1B7F00095EF1C /* CustomParts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				A73F0DA71DE1B3420095EF1C /* Demo */,
 				A73F0DA61DE1B3420095EF1C /* Products */,
+				A73F0DBD1DE1B7F00095EF1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				A73F0DB41DE1B3420095EF1C /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		A73F0DBD1DE1B7F00095EF1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A73F0DBE1DE1B7F00095EF1C /* CustomParts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +311,7 @@
 				A73F0DB91DE1B3420095EF1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
